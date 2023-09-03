@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+.contacto {
+  font-size: 45px;
+}
+.contacText {
+  font-size: 22px;
+  line-height: 27.5px;
+  padding-bottom: 20px;
+  color: #1e1e1e;
+}
+.grid3Columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.centerItem {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.contactIcon {
+  width: 56px;
+  height: 56px;
+}
+.wrtiteTitle {
+  text-align: center;
+}
+.gridForm {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+}
+.grid2columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.formItem {
+  text-align: center;
+}
+.sendBtn {
+  margin: auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  width: 144px;
+  height: 55px;
+}
+.btnCss {
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #2f4b6b;
+}
+.logo {
+  width: 269px;
+  height: 90px;
+}
+input[type="text"],
+input[type="email"] {
+  border-radius: 8px;
+  border-width: 1px;
+  font-size: 25px;
+  text-align: left;
+  border: 1px solid black;
+}
+input:focus {
+  outline: none;
+}
+.footerTxt {
+  display: grid;
+  place-items: center;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.visitUs {
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #2f4b6b;
+  color: #f6f6f6;
+}
+.visitTitle {
+  font-weight: bold;
+  line-height: 85px;
+}
+.visitSubtitle {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.dirTxt {
+  font-weight: bold;
+  font-size: 28px;
+}
+.message {
+  border-radius: 8px;
+  border: 1px solid black;
+}
+#campo4 {
+  border-width: 0px;
+  padding: 0px;
+}
+.footerCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rights {
+  place-items: center;
+  grid-column: 1 / span 3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.grid {
+  display: grid;
+}
+.paddingB {
+  padding-bottom: 30px;
+}
+.paddingB90 {
+  padding-bottom: 90px;
+}
+.paddT50 {
+  padding-top: 50px;
+}
+.color1e {
+  color: #1e1e1e;
+}
+.colorf6 {
+  color: #f6f6f6;
+}
+.px45 {
+  font-size: 45px;
+}
+.px24 {
+  font-size: 24px;
+}
+.width50 {
+  width: 50%;
+}
+.width100 {
+  width: 100%;
+}
+.height50 {
+  height: 50px;
+}
+.height100 {
+  height: 100px;
+}
+.bold {
+  font-weight: bold;
+}
