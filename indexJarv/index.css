@@ -5,6 +5,7 @@
   border: none;
 }
 .contacto {
+  padding-left: 30px;
   font-size: 45px;
 }
 .contacText {
@@ -26,6 +27,7 @@
 .contactIcon {
   width: 56px;
   height: 56px;
+  margin-bottom: 15px;
 }
 .wrtiteTitle {
   text-align: center;
@@ -68,11 +70,13 @@
 }
 input[type="text"],
 input[type="email"] {
+  padding-left: 10px;
   border-radius: 8px;
   border-width: 1px;
   font-size: 25px;
   text-align: left;
   border: 1px solid black;
+  background-color: #e2e4e8;
 }
 input:focus {
   outline: none;
@@ -109,7 +113,6 @@ input:focus {
 }
 #campo4 {
   border-width: 0px;
-  padding: 0px;
 }
 .footerCenter {
   display: flex;
@@ -134,6 +137,12 @@ input:focus {
 }
 .paddT50 {
   padding-top: 50px;
+}
+.paddT10 {
+  padding-top: 10px;
+}
+.marB25 {
+  margin-bottom: 25px;
 }
 .color1e {
   color: #1e1e1e;
@@ -161,4 +170,88 @@ input:focus {
 }
 .bold {
   font-weight: bold;
+}
+
+@media (max-width: 885px) and (min-width: 777px) {
+  input[type="text"],
+  input[type="email"] {
+    font-size: 18px;
+  }
+}
+@media (max-width: 776px) {
+  input[type="text"],
+  input[type="email"] {
+    min-width: 45px;
+    width: 100%;
+  }
+  .textCenter {
+    text-align: center;
+  }
+  .contacto {
+    font-weight: bold;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-left: 0px;
+  }
+  .contacText {
+    font-size: 18px;
+  }
+  .grid3Columns {
+    grid-template-columns: 1fr;
+  }
+  .rights {
+    grid-column: 1;
+  }
+  .grid2columns {
+    grid-template-columns: 1fr;
+  }
+  .footerTxt {
+    padding-top: 20px;
+  }
+  #telMen {
+    margin-bottom: 50px;
+  }
+  #campo1,
+  #campo2,
+  #campo3,
+  #campo4 {
+    height: 32px;
+  }
+  #campo1 {
+    margin-bottom: 10px;
+  }
+  .gridForm {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #visit {
+    font-size: 20px;
+  }
+  .visitSubtitle {
+    font-size: 16px;
+  }
+  .dirTxt {
+    font-size: 18px;
+  }
+  .imageR,
+  .imageL {
+    position: relative;
+  }
+  .visitUs {
+    height: 378px;
+  }
+  .dotsL,
+  .dotsR {
+    height: 378px;
+  }
+  .dotsL {
+    position: absolute;
+  }
+  .dotsR {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }

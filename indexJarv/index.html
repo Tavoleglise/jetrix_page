@@ -48,17 +48,21 @@
             <span>Nos pondremos en contacto contigo lo antes posible</span>
           </div>
         </div>
-        <form class="gridForm">
+        <form
+          action="mailto:atencionaclientes@jetrix.com.mx?subject=Mensaje%20predeterminado"
+          method="GET"
+          class="gridForm"
+        >
           <div class="formItem">
             <input
-              class="width50 formItem height50"
+              class="marB25 width50 formItem height50"
               type="text"
               id="campo1"
               name="campo1"
               placeholder="Nombre*"
             />
           </div>
-          <div class="formItem grid2columns height50">
+          <div class="marB25 formItem grid2columns height50" id="telMen">
             <input
               class="width"
               type="text"
@@ -68,7 +72,7 @@
             />
             <input type="email" id="campo3" name="Mail" placeholder="Mail*" />
           </div>
-          <div class="formItem height100 message">
+          <div class="marB25 paddT10 height100 message">
             <input
               class="width100 formItem"
               type="text"
@@ -84,10 +88,14 @@
       </div>
       <div class="visitUs">
         <div class="imageL">
-          <img src="img/footerImg.png" alt="Descripción de la imagen" />
+          <img
+            src="img/footerImg.png"
+            class="dotsL"
+            alt="Descripción de la imagen"
+          />
         </div>
         <div class="footerTxt">
-          <div class="visitTitle px45"><span>Visítanos</span></div>
+          <div class="visitTitle px45" id="visit"><span>Visítanos</span></div>
           <div class="visitSubtitle px24">
             <span>Estamos cerca de ti, ven a nuestras instalaciones</span>
             <br />
@@ -102,7 +110,11 @@
           </div>
         </div>
         <div class="imageR">
-          <img src="img/footerImg.png" alt="Descripción de la imagen" />
+          <img
+            src="img/footerImg.png"
+            class="dotsR"
+            alt="Descripción de la imagen"
+          />
         </div>
       </div>
       <div class="footer">
@@ -123,4 +135,5 @@
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
