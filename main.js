@@ -2,6 +2,7 @@ const container = document.querySelector(".slider-container");
 const sections = gsap.utils.toArray(
   ".slider .slider-container .card-container"
 );
+const slider_buttons = gsap.utils.toArray(".slider .slider-container .button");
 const buttonPrev = document.querySelector("#prev-button");
 const buttonNext = document.querySelector("#next-button");
 
@@ -100,6 +101,25 @@ const getAplications = async (id = 0) => {
   });
 
   filtered_aplications.innerHTML = aplication_html;
+
+  const aplication_cards = gsap.utils.toArray(".aplication-card");
+
+  aplication_cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: "#contacto",
+      });
+    });
+  });
+
+  const button_acabados = document.querySelector(".button-acabadosEspeciales");
+  button_acabados.addEventListener("click", () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: "#contacto",
+    });
+  });
 };
 
 const getMobileAplicationCards = async () => {
@@ -167,6 +187,26 @@ const getMobileAplicationCards = async () => {
         : aplicationsActiveSection + 1;
     animateAplications(aplicationsActiveSection);
   });
+
+  const aplication_cards = gsap.utils.toArray(".aplication-card");
+
+  aplication_cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: "#contacto",
+      });
+    });
+  });
+  const button_acabados = document.querySelector(
+    ".mobile-aplication-button-container .button"
+  );
+  button_acabados.addEventListener("click", () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: "#contacto",
+    });
+  });
 };
 
 getTypesTags();
@@ -175,11 +215,23 @@ getMobileAplicationCards();
 
 //-------------------------------------------------------------------------------------
 
-navbuttons_group.forEach((button) => {
+navbuttons_group.forEach((button, index) => {
+  if (index === 0) {
+    return;
+  }
   button.addEventListener("click", () => {
     gsap.to(window, {
       duration: 1,
       scrollTo: `${button.getAttribute("href")}`,
+    });
+  });
+});
+
+slider_buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: "#contacto",
     });
   });
 });
