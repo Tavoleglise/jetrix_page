@@ -1,0 +1,85 @@
+{
+  "aplications_type": [
+    {
+      "type": "Etiqueta",
+      "id": 0,
+      "aplications": [
+        {
+          "name": "Autoadherible",
+          "url_image": "./assets/img/aplications_types/Etiquetas-autoadherible.png"
+        },
+        {
+          "name": "IML",
+          "url_image": "./assets/img/aplications_types/Etiquetas-IML.png"
+        },
+        {
+          "name": "Heat Transfer",
+          "url_image": "./assets/img/aplications_types/Etiquetas-heat_transfer.png"
+        },
+        {
+          "name": "Termoencogible",
+          "url_image": "./assets/img/aplications_types/Etiquetas-termoencogibles.png"
+        }
+      ]
+    },
+    {
+      "type": "Especialidades",
+      "id": 1,
+      "aplications": [
+        {
+          "name": "Security <br> printing",
+          "url_image": "./assets/img/aplications_types/Especialidades-security_printing.png"
+        },
+        {
+          "name": "Libros",
+          "url_image": "./assets/img/aplications_types/Especialidades-libros.png"
+        },
+        {
+          "name": "Banners",
+          "url_image": "./assets/img/aplications_types/Especialidades-banner.png"
+        },
+        {
+          "name": "Wallpapres",
+          "url_image": "./assets/img/aplications_types/Especialidades-wallpaper.png"
+        }
+      ]
+    },
+    {
+      "type": "Empaque flexible",
+      "id": 2,
+      "aplications": [
+        {
+          "name": "Pouches",
+          "url_image": "./assets/img/aplications_types/Pouches.png"
+        }
+      ]
+    },
+    {
+      "type": "Accesorios flexo",
+      "id": 3,
+      "aplications": [
+        {
+          "name": "Anilox",
+          "url_image": "./assets/img/aplications_types/Accesorios-anilox.png"
+        },
+        {
+          "name": "Porta plancha",
+          "url_image": "./assets/img/aplications_types/Accesorios-portaplancha.png"
+        },
+        {
+          "name": "Cilindro Magnético",
+          "url_image": "./assets/img/aplications_types/Accesorios-cilindros_magneticos.png"
+        },
+        {
+          "name": "Lavadora",
+          "url_image": "./assets/img/aplications_types/Accesorios-lavadora.png"
+        }
+      ]
+    },
+    {
+      "type": "Acabados Especiales",
+      "id": 4,
+      "aplications": []
+    }
+  ]
+}
