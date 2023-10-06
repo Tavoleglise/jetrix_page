@@ -156,8 +156,20 @@ input:focus {
 .px24 {
   font-size: 24px;
 }
+.px28 {
+  font-size: 28px;
+}
+.px25 {
+  font-size: 25px;
+}
+.mAuto {
+  margin: auto;
+}
 .width50 {
   width: 50%;
+}
+.width55 {
+  width: 55%;
 }
 .width100 {
   width: 100%;
