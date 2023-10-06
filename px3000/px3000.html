@@ -179,16 +179,17 @@
         </div>
       </div>
       <form
-        action="mailto:atencionaclientes@jetrix.com.mx?subject=Mensaje%20predeterminado"
-        method="GET"
+        id="form"
         class="gridForm"
+        action="https://formsubmit.co/marketing@jetrix.com.mx"
+        method="POST"
       >
         <div class="formItem">
           <input
             class="marB25 width50 formItem height50"
             type="text"
             id="campo1"
-            name="campo1"
+            name="Nombre"
             placeholder="Nombre*"
           />
         </div>
@@ -198,6 +199,7 @@
             type="text"
             id="campo2"
             name="Telefono"
+            maxlength="10"
             placeholder="Telefono*"
           />
           <input type="email" id="campo3" name="Mail" placeholder="Mail*" />
