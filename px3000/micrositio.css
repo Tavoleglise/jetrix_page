@@ -1,3 +1,4 @@
+/*----- Header navbar -----*/
 nav {
   background: linear-gradient(90deg, #0e2133 0%, #2f4b6b 100%);
   display: flex;
@@ -62,6 +63,7 @@ nav .menu-container .burguermenu li {
   display: block;
   text-align: right;
 }
+/*----- Header navbar -----*/
 .mainImg {
   display: flex;
   justify-content: center;
@@ -258,23 +260,16 @@ nav .menu-container .burguermenu li {
 @media (max-width: 1850px) {
 }
 @media (max-width: 1245px) {
-}
-@media (max-width: 776px) {
-  .main-button {
-    font-size: 1rem;
-  }
-
-  .secondary-button {
-    margin-right: 1rem;
-    font-size: 1rem;
-  }
-}
-@media (max-width: 776px) {
-  .aplication-card {
-    margin-bottom: 20px;
+  nav .burguermenu-icon {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 }
-
 @media (max-width: 1199px) and (min-width: 1025px) {
   .titleTxt {
     font-size: 50px;
@@ -393,4 +388,33 @@ nav .menu-container .burguermenu li {
   .itemF {
     padding-bottom: 70px;
   }
+
+  .main-button {
+    font-size: 1rem;
+  }
+
+  .secondary-button {
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  .aplication-card {
+    margin-bottom: 20px;
+  }
+
+  /*----- Header navbar -----*/
+  nav {
+    flex-direction: column;
+  }
+
+  nav div {
+    width: 100%;
+  }
+
+  nav .logo-container img {
+    width: 100px;
+  }
+  nav .menu-container {
+    padding: 0;
+  }
+  /*----- Header navbar -----*/
 }
