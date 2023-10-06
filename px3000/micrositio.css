@@ -64,6 +64,9 @@ nav .menu-container .burguermenu li {
   text-align: right;
 }
 /*----- Header navbar -----*/
+.mAuto {
+  margin: auto;
+}
 .mainImg {
   display: flex;
   justify-content: center;
