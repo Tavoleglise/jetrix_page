@@ -1,8 +1,16 @@
+import generateHeader from "../components/header.js";
+import generateFooter from "../components/footer.js";
+
 const navbuttons_group = document.querySelectorAll(".menu-container ul li");
 const button_to_contact = document.getElementById("button_to_contact");
 
 const navbar_icon = document.querySelector(".burguermenu-icon");
 const burguermenu = document.querySelector(".burguermenu");
+
+const header = document.querySelector("header");
+const footer = document.querySelector(".footer");
+generateHeader(header, true);
+generateFooter(footer, true);
 
 button_to_contact.addEventListener("click", () => {
   gsap.to(window, {

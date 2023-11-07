@@ -1,3 +1,7 @@
+import generateHeader from "./components/header.js";
+import generateFooter from "./components/footer.js";
+import generateHead from "./components/head.js";
+
 const container = document.querySelector(".slider-container");
 const sections = gsap.utils.toArray(
   ".slider .slider-container .card-container"
@@ -12,16 +16,15 @@ const buttonNextMobile = document.querySelector("#next-button-mobile");
 const tags_group = document.querySelector(".tags-group");
 const filtered_aplications = document.querySelector(".apliactions-filtered");
 
-const navbuttons_group = document.querySelectorAll(".menu-container ul li");
-
-const navbar_icon = document.querySelector(".burguermenu-icon");
-const burguermenu = document.querySelector(".burguermenu");
-burguermenu;
-
 const aplications_container = document.querySelector(".cards-container");
 
-console.log(navbar_icon, burguermenu);
+//generate components
 
+const header = document.querySelector("header");
+const footer = document.querySelector(".footer");
+generateHeader(header, false);
+generateFooter(footer, false);
+// generateHead();
 //-------------------------------------------------------------------------------------
 
 let activeSection = 1;
@@ -41,14 +44,12 @@ buttonPrev.addEventListener("click", (event) => {
   event.preventDefault();
   activeSection = activeSection <= 1 ? sections.length : activeSection - 1;
   animateSlides(activeSection);
-  console.log(activeSection);
 });
 
 buttonNext.addEventListener("click", (event) => {
   event.preventDefault();
   activeSection = activeSection >= sections.length ? 1 : activeSection + 1;
   animateSlides(activeSection);
-  console.log(activeSection);
 });
 
 //-------------------------------------------------------------------------------------
@@ -58,25 +59,23 @@ let tags_html = "";
 const fetchData = async () => {
   const response = await fetch("./json_folder/database.json");
   const aplications = await response.json();
-  console.log(aplications);
   return aplications;
 };
 
 const getTypesTags = async () => {
   const types = await fetchData();
   types.aplications_type.forEach((type, index) => {
-    tags_html += `<div onClick='getAplications(${type.id})' class="tag ${
+    tags_html += `<div class="tag ${
       index === 0 ? "selected" : ""
     }">${type.type.toUpperCase()}</div>`;
   });
   tags_group.innerHTML = tags_html;
-
   const tags_arr = document.querySelectorAll(".tag");
 
-  tags_arr.forEach((tag) => {
+  tags_arr.forEach((tag, index) => {
     tag.addEventListener("click", function classClicked(event) {
-      console.log("clicked");
       tags_arr.forEach((tag) => {
+        getAplications(index);
         tag.classList.remove("selected");
       });
       tag.classList.add("selected");
@@ -114,7 +113,7 @@ const getAplications = async (id = 0) => {
   });
 
   const button_acabados = document.querySelector(".button-acabadosEspeciales");
-  button_acabados.addEventListener("click", () => {
+  button_acabados?.addEventListener("click", () => {
     gsap.to(window, {
       duration: 1,
       scrollTo: "#contacto",
@@ -169,18 +168,15 @@ const getMobileAplicationCards = async () => {
 
   buttonPrevMobile.addEventListener("click", (event) => {
     event.preventDefault();
-    console.log("prev");
     aplicationsActiveSection =
       aplicationsActiveSection <= 1
         ? aplication_sections.length
         : aplicationsActiveSection - 1;
-    console.log(aplicationsActiveSection);
     animateAplications(aplicationsActiveSection);
   });
 
   buttonNextMobile.addEventListener("click", (event) => {
     event.preventDefault();
-    console.log("next");
     aplicationsActiveSection =
       aplicationsActiveSection >= aplication_sections.length
         ? 1
@@ -215,19 +211,9 @@ getMobileAplicationCards();
 
 //-------------------------------------------------------------------------------------
 
-navbuttons_group.forEach((button, index) => {
-  if (index === 0) {
-    return;
-  }
-  button.addEventListener("click", () => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: `${button.getAttribute("href")}`,
-    });
-  });
-});
+const scrollButtons = slider_buttons.slice(1, slider_buttons.length);
 
-slider_buttons.forEach((button) => {
+scrollButtons.forEach((button) => {
   button.addEventListener("click", () => {
     gsap.to(window, {
       duration: 1,
@@ -235,22 +221,3 @@ slider_buttons.forEach((button) => {
     });
   });
 });
-
-//-------------------------------------------------------------------------------------
-let isMenuHidden = false;
-
-const menuDisplay = (flag) => {
-  gsap.to(burguermenu, {
-    display: `${flag ? "none" : "block"}`,
-  });
-  gsap.to(burguermenu, {
-    opacity: `${flag ? 0 : 1}`,
-  });
-};
-navbar_icon.addEventListener("click", () => {
-  menuDisplay(isMenuHidden);
-  isMenuHidden = !isMenuHidden;
-});
-console.log(isMenuHidden);
-
-//-------------------------------------------------------------------------------------
