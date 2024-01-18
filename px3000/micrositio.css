@@ -260,7 +260,12 @@ nav .menu-container .burguermenu li {
 .aplications-section .aplications-container {
   display: block;
 }
-
+.bold {
+  font-weight: bold;
+}
+.px28 {
+  font-size: 28px;
+}
 @media (max-width: 1850px) {
 }
 @media (max-width: 1245px) {

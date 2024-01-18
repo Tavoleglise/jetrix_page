@@ -156,9 +156,7 @@ input:focus {
 .px24 {
   font-size: 24px;
 }
-.px28 {
-  font-size: 28px;
-}
+
 .px25 {
   font-size: 25px;
 }
@@ -179,9 +177,6 @@ input:focus {
 }
 .height100 {
   height: 100px;
-}
-.bold {
-  font-weight: bold;
 }
 
 @media (max-width: 885px) and (min-width: 777px) {
