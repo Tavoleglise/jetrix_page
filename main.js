@@ -18,6 +18,8 @@ const filtered_aplications = document.querySelector(".apliactions-filtered");
 
 const aplications_container = document.querySelector(".cards-container");
 
+const SLIDER_ANIMATION_TIME = 10000
+
 //generate components
 
 const header = document.querySelector("header");
@@ -38,7 +40,7 @@ const animateSlides = (slideNumber) => {
 setInterval(() => {
   activeSection = activeSection < sections.length ? activeSection + 1 : 1;
   animateSlides(activeSection);
-}, 5000);
+}, SLIDER_ANIMATION_TIME);
 
 buttonPrev.addEventListener("click", (event) => {
   event.preventDefault();
@@ -164,7 +166,7 @@ const getMobileAplicationCards = async () => {
         ? aplicationsActiveSection + 1
         : 1;
     animateAplications(aplicationsActiveSection);
-  }, 5000);
+  }, SLIDER_ANIMATION_TIME);
 
   buttonPrevMobile.addEventListener("click", (event) => {
     event.preventDefault();
