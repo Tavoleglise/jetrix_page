@@ -188,6 +188,7 @@ nav .menu-container .burguermenu li {
   background-color: none;
   font-size: 25px;
   width: 290px;
+  cursor: pointer;
 }
 .video {
   border-radius: 15px;
@@ -265,6 +266,11 @@ nav .menu-container .burguermenu li {
 }
 .px28 {
   font-size: 28px;
+}
+
+.aplications-section .aplications-container .apliactions-filtered {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
 }
 @media (max-width: 1850px) {
 }
