@@ -272,6 +272,18 @@ nav .menu-container .burguermenu li {
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
 }
+.wd85 {
+  width: 85%;
+}
+.wd70 {
+  width: 70%;
+}
+.wd60 {
+  width: 60%;
+}
+.pdB0 {
+  padding-bottom: 0;
+}
 @media (max-width: 1850px) {
 }
 @media (max-width: 1245px) {
