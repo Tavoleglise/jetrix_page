@@ -4,8 +4,7 @@ import generateFooter from "../components/footer.js";
 const navbuttons_group = document.querySelectorAll(".menu-container ul li");
 const button_to_contact = document.getElementById("button_to_contact");
 
-const navbar_icon = document.querySelector(".burguermenu-icon");
-const burguermenu = document.querySelector(".burguermenu");
+const buttonOpenPdf = document.querySelector("#butonPDF");
 
 const header = document.querySelector("header");
 const footer = document.querySelector(".footer");
@@ -32,20 +31,9 @@ navbuttons_group.forEach((button, index) => {
 });
 
 //-------------------------------------------------------------------------------------
-let isMenuHidden = false;
-
-const menuDisplay = (flag) => {
-  gsap.to(burguermenu, {
-    display: `${flag ? "none" : "block"}`,
-  });
-  gsap.to(burguermenu, {
-    opacity: `${flag ? 0 : 1}`,
-  });
-};
-navbar_icon.addEventListener("click", () => {
-  menuDisplay(isMenuHidden);
-  isMenuHidden = !isMenuHidden;
+buttonOpenPdf.addEventListener("click", () => {
+  window.open(
+    "../assets/pdf/dry-toner/Equipos digitales_Xeikon_FichaTecnica.pdf",
+    "_blank"
+  );
 });
-console.log(isMenuHidden);
-
-//-------------------------------------------------------------------------------------
