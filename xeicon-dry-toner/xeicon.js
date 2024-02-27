@@ -1,8 +1,7 @@
 import generateHeader from "../components/header.js";
 import generateFooter from "../components/footer.js";
-
-const navbuttons_group = document.querySelectorAll(".menu-container ul li");
-const button_to_contact = document.getElementById("button_to_contact");
+import { generateAplications } from "../micrositio.js";
+import { dryTonerAplications } from "../utils/utils.js";
 
 const buttonOpenPdf = document.querySelector("#butonPDF");
 
@@ -11,25 +10,6 @@ const footer = document.querySelector(".footer");
 generateHeader(header, true);
 generateFooter(footer, true);
 
-button_to_contact.addEventListener("click", () => {
-  gsap.to(window, {
-    duration: 1,
-    scrollTo: `#contacto`,
-  });
-});
-
-navbuttons_group.forEach((button, index) => {
-  if (index === 0) {
-    return;
-  }
-  button.addEventListener("click", () => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: `${button.getAttribute("href")}`,
-    });
-  });
-});
-
 //-------------------------------------------------------------------------------------
 buttonOpenPdf.addEventListener("click", () => {
   window.open(
@@ -37,3 +17,7 @@ buttonOpenPdf.addEventListener("click", () => {
     "_blank"
   );
 });
+
+//-------------------------------------------------------------------------------------
+
+generateAplications(dryTonerAplications);
