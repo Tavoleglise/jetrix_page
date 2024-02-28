@@ -68,3 +68,62 @@ export const dryTonerAplications = [
     ],
   },
 ];
+
+export const weiganseriesJZR = [
+  {
+    type: "Empaque flexible",
+    id: 0,
+    aplications: [
+      {
+        name: "Aluminio",
+        url_image: "../assets/img/pages/weigan/Empaque flexible/Aluminio.jpg",
+      },
+      {
+        name: "pbl",
+        url_image: "../assets/img/pages/weigan/Empaque flexible/PBL.jpg",
+      },
+      {
+        name: "Pouches",
+        url_image: "../assets/img/pages/weigan/Empaque flexible/Pouches.png",
+      },
+    ],
+  },
+  {
+    type: "Etiquetas",
+    id: 1,
+    aplications: [
+      {
+        name: "Etiquetas IML",
+        url_image: "../assets/img/pages/weigan/Etiquetas/Etiquetas-IML.png",
+      },
+      {
+        name: "Etiquetas Termoencogibles",
+        url_image: "../assets/img/pages/weigan/Etiquetas/Etiquetas-termoencogibles.png",
+      },
+      {
+        name: "Etiquetas Wrap Arround",
+        url_image: "../assets/img/pages/weigan/Etiquetas/Etiquetas-wrap arround.png",
+      },
+    ],
+  },
+];
+export const rebornApplications = [
+  {
+    type: "Acabados especiales",
+    id: 0,
+    aplications: [
+      {
+        name: "embozado",
+        url_image: "../assets/img/pages/reborn/embozado.jpg",
+      },
+      {
+        name: "hot stamping",
+        url_image: "../assets/img/pages/reborn/hot stamping.jpg",
+      },
+      {
+        name: "serigrafia",
+        url_image: "../assets/img/pages/reborn/serigrafia.jpg",
+      },
+    ],
+  },
+];
