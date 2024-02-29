@@ -64,6 +64,7 @@ const getMobileAplicationCards = async (machineObj) => {
   container.style.width = `${100 * typesArr.length}%`;
 
   typesArr.forEach((type) => {
+    console.log(type.aplications);
     let mobileAplicationCardImages_html = "";
     mobileAplicationCard_html += `
     <div class="card">

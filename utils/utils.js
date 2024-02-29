@@ -76,15 +76,15 @@ export const weiganseriesJZR = [
     aplications: [
       {
         name: "Aluminio",
-        url_image: "../assets/img/pages/weigan/Empaque flexible/Aluminio.jpg",
+        url_image: "../assets/img/pages/weigan/Empaque-flexible/Aluminio.jpg",
       },
       {
         name: "pbl",
-        url_image: "../assets/img/pages/weigan/Empaque flexible/PBL.jpg",
+        url_image: "../assets/img/pages/weigan/Empaque-flexible/PBL.jpg",
       },
       {
         name: "Pouches",
-        url_image: "../assets/img/pages/weigan/Empaque flexible/Pouches.png",
+        url_image: "../assets/img/pages/weigan/Empaque-flexible/Pouches.png",
       },
     ],
   },
@@ -98,11 +98,13 @@ export const weiganseriesJZR = [
       },
       {
         name: "Etiquetas Termoencogibles",
-        url_image: "../assets/img/pages/weigan/Etiquetas/Etiquetas-termoencogibles.png",
+        url_image:
+          "../assets/img/pages/weigan/Etiquetas/Etiquetas-termoencogibles.png",
       },
       {
         name: "Etiquetas Wrap Arround",
-        url_image: "../assets/img/pages/weigan/Etiquetas/Etiquetas-wrap arround.png",
+        url_image:
+          "../assets/img/pages/weigan/Etiquetas/Etiquetas-wrap-arround.png",
       },
     ],
   },
@@ -118,7 +120,7 @@ export const rebornApplications = [
       },
       {
         name: "hot stamping",
-        url_image: "../assets/img/pages/reborn/hot stamping.jpg",
+        url_image: "../assets/img/pages/reborn/hot-stamping.jpg",
       },
       {
         name: "serigrafia",
