@@ -18,7 +18,7 @@ const filtered_aplications = document.querySelector(".apliactions-filtered");
 
 const aplications_container = document.querySelector(".cards-container");
 
-const SLIDER_ANIMATION_TIME = 10000
+const SLIDER_ANIMATION_TIME = 10000;
 
 //generate components
 
@@ -213,7 +213,7 @@ getMobileAplicationCards();
 
 //-------------------------------------------------------------------------------------
 
-const scrollButtons = slider_buttons.slice(1, slider_buttons.length);
+const scrollButtons = slider_buttons.slice(4, slider_buttons.length);
 
 scrollButtons.forEach((button) => {
   button.addEventListener("click", () => {

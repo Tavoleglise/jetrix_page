@@ -13,7 +13,7 @@ generateFooter(footer, true);
 //-------------------------------------------------------------------------------------
 buttonOpenPdf.addEventListener("click", () => {
   window.open(
-    "../assets/pdf/px3000/Spec-sheet-Panther-series_metric.pdf",
+    "../assets/pdf/dry-toner/Equipos digitales_Xeikon_FichaTecnica.pdf",
     "_blank"
   );
 });
