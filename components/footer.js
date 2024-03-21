@@ -9,7 +9,7 @@ const generateFooter = (element, isMicro) => {
               isMicro ? "../assets/img/logo.png" : "./assets/img/logo.png"
             }" class="logo" />
         </div>
-        <div class="centerItem grid">
+        <div id="avisoDePrivacidadButton" class="centerItem grid">
             <span>Aviso de privacidad</span>
         </div>
         <div class="rights grid textCenter">
@@ -19,8 +19,17 @@ const generateFooter = (element, isMicro) => {
         `;
   if (element) {
     element.innerHTML = mainFooter;
-    console.log(element);
   }
+
+  const buttonOpenPdf = document.querySelector("#avisoDePrivacidadButton");
+  buttonOpenPdf.addEventListener("click", () => {
+    window.open(
+      `${
+        isMicro ? ".." : "."
+      }/assets/pdf/AvisodePrivacidadJetrix_230830_121653.pdf`,
+      "_blank"
+    );
+  });
 };
 
 export default generateFooter;
