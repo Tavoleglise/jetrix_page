@@ -247,6 +247,7 @@ nav .menu-container .burguermenu li {
   .apliactions-filtered
   .aplication-card {
   display: flex;
+  padding-bottom: 25px;
   flex-direction: column;
   align-items: center;
   margin: 0 50px;
@@ -260,13 +261,13 @@ nav .menu-container .burguermenu li {
 }
 
 .aplications-section .aplications-container .apliactions-filtered img {
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 @media (max-width: 1850px) {
   .aplications-section .aplications-container .apliactions-filtered img {
-    width: 200px;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -333,7 +334,7 @@ nav .menu-container .burguermenu li {
     grid-template-columns: repeat(auto-fit, 150px);
   }
   .aplications-section .aplications-container .apliactions-filtered img {
-    width: 120px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -638,6 +639,9 @@ input:focus {
 }
 .paddingB90 {
   padding-bottom: 90px;
+}
+.paddingB40 {
+  padding-bottom: 40px;
 }
 .paddT50 {
   padding-top: 50px;

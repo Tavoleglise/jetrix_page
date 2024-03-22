@@ -102,8 +102,8 @@ nav .menu-container .burguermenu li {
   grid-template-areas:
     "a c e"
     "b d f"
-    "g g g"
-    "h h h";
+    ". g ."
+    ". h .";
   margin: auto;
   width: 90%;
   gap: 20px;
@@ -139,6 +139,12 @@ nav .menu-container .burguermenu li {
 }
 .itemJ {
   grid-area: j;
+}
+.itemK {
+  grid-area: k;
+}
+.itemL {
+  grid-area: l;
 }
 .icon {
   max-width: 144px;
@@ -219,6 +225,9 @@ nav .menu-container .burguermenu li {
 .px23 {
   font-size: 23px;
 }
+.px26 {
+  font-size: 26px;
+}
 
 .buttons-section {
   display: flex;
@@ -260,7 +269,7 @@ nav .menu-container .burguermenu li {
 }
 
 .aplications-section .tag {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 2rem 0;
 }
 .bold {
@@ -268,6 +277,9 @@ nav .menu-container .burguermenu li {
 }
 .px28 {
   font-size: 28px;
+}
+.px29 {
+  font-size: 29px;
 }
 
 .aplications-section .aplications-container .apliactions-filtered {
@@ -315,6 +327,10 @@ nav .menu-container .burguermenu li {
   .px28 {
     font-size: 24px;
   }
+  .px29,
+  .px26 {
+    font-size: 26px;
+  }
   .px23,
   .px25 {
     font-size: 21px;
@@ -338,6 +354,10 @@ nav .menu-container .burguermenu li {
   }
   .px28 {
     font-size: 20px;
+  }
+  .px29,
+  .px26 {
+    font-size: 25px;
   }
   .b24px {
     font-size: 24px;
@@ -371,6 +391,10 @@ nav .menu-container .burguermenu li {
   .px28 {
     font-size: 19px;
   }
+  .px29,
+  .px26 {
+    font-size: 23px;
+  }
   .b24px {
     font-size: 20px;
     font-weight: 400;
@@ -381,6 +405,8 @@ nav .menu-container .burguermenu li {
   }
   .bContainer {
     gap: 3%;
+    margin: auto;
+    width: 90%;
   }
   .button1,
   .button2 {
@@ -399,16 +425,24 @@ nav .menu-container .burguermenu li {
       "e"
       "f"
       "g"
-      "h";
+      "h"
+      "i"
+      "j"
+      "k"
+      "l";
   }
   .description {
     grid-template-areas:
-      "a a a c c c"
-      "b b b d d d"
-      "e e e g g g"
-      "f f f h h h"
-      ". i i i i ."
-      ". j j j j .";
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i"
+      "j";
   }
   .video {
     height: 189px;
