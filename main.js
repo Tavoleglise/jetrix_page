@@ -18,7 +18,7 @@ const filtered_aplications = document.querySelector(".apliactions-filtered");
 
 const aplications_container = document.querySelector(".cards-container");
 
-const SLIDER_ANIMATION_TIME = 150000;
+const SLIDER_ANIMATION_TIME = 15000;
 
 //generate components
 
