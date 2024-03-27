@@ -1,7 +1,11 @@
+import { addPdfEvent } from "../utils/utils.js";
+
+const PDF_URL = "/assets/pdf/AvisodePrivacidadJetrix_230830_121653.pdf";
+
 const generateFooter = (element, isMicro) => {
   const mainFooter = `
     <div class="grid3Columns paddT50">
-        <div class="centerItem grid">
+        <div id="terminosYCondicionesButton" class="centerItem grid footerButton">
             <span>Términos y condiciones</span>
         </div>
         <div class="centerItem footerCenter">
@@ -9,7 +13,7 @@ const generateFooter = (element, isMicro) => {
               isMicro ? "../assets/img/logo.png" : "./assets/img/logo.png"
             }" class="logo" />
         </div>
-        <div id="avisoDePrivacidadButton" class="centerItem grid">
+        <div id="avisoDePrivacidadButton" class="centerItem grid footerButton">
             <span>Aviso de privacidad</span>
         </div>
         <div class="rights grid textCenter">
@@ -21,15 +25,15 @@ const generateFooter = (element, isMicro) => {
     element.innerHTML = mainFooter;
   }
 
-  const buttonOpenPdf = document.querySelector("#avisoDePrivacidadButton");
-  buttonOpenPdf.addEventListener("click", () => {
-    window.open(
-      `${
-        isMicro ? ".." : "."
-      }/assets/pdf/AvisodePrivacidadJetrix_230830_121653.pdf`,
-      "_blank"
-    );
-  });
+  const buttonPrivacyNoticePdf = document.querySelector(
+    "#avisoDePrivacidadButton"
+  );
+  const buttonTermsAndConditions = document.querySelector(
+    "#terminosYCondicionesButton"
+  );
+
+  addPdfEvent(buttonPrivacyNoticePdf, `${isMicro ? ".." : "."}${PDF_URL}`);
+  addPdfEvent(buttonTermsAndConditions, `${isMicro ? ".." : "."}${PDF_URL}`);
 };
 
 export default generateFooter;

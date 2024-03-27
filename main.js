@@ -32,9 +32,17 @@ generateFooter(footer, false);
 let activeSection = 1;
 
 const animateSlides = (slideNumber) => {
-  let scrollTween = gsap.to(sections, {
-    xPercent: -100 * (slideNumber - 1),
-  });
+  let tl = gsap.timeline();
+
+  tl.to(sections, {
+    opacity: 0,
+  })
+    .set(sections, {
+      xPercent: -100 * (slideNumber - 1),
+    })
+    .to(sections, {
+      opacity: 1,
+    });
 };
 
 setInterval(() => {
@@ -96,9 +104,13 @@ const getAplications = async (id = 0) => {
   }
 
   aplicationsSpecificType.aplications.forEach((aplication) => {
-    aplication_html += `<div class="aplication-card"><img src="${
-      aplication.url_image
-    }" alt="" />${aplication.name.toUpperCase()}</div>`;
+    aplication_html += `
+    <div class="aplication-card">
+      <img src="${
+        aplication.url_image
+      }" alt="" />${aplication.name.toUpperCase()}
+    </div>
+    `;
   });
 
   filtered_aplications.innerHTML = aplication_html;

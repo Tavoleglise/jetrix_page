@@ -129,3 +129,9 @@ export const rebornApplications = [
     ],
   },
 ];
+
+export const addPdfEvent = (button, pdf) => {
+  button.addEventListener("click", () => {
+    window.open(pdf, "_blank");
+  });
+};

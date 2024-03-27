@@ -252,6 +252,7 @@ nav .menu-container .burguermenu li {
   margin: 0 25px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .aplication-card:hover {
@@ -262,6 +263,10 @@ nav .menu-container .burguermenu li {
 .aplications-section .aplications-container .apliactions-filtered img {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.footerButton {
+  cursor: pointer;
 }
 
 @media (max-width: 1850px) {
