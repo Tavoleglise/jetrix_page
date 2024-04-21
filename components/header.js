@@ -4,15 +4,15 @@ const generateHeader = (element, isMicro) => {
     <div class="burguermenu-icon">
         <img src="${
           isMicro
-            ? "../assets/img//icons/menu.png"
+            ? "../../assets/img//icons/menu.png"
             : "./assets/img//icons/menu.png"
         }" alt="" />
     </div>
     <div class="logo-container">
-        <a href="${isMicro ? "../" : "./"}">
+        <a href="${isMicro ? "../../" : "./"}">
             <img src="${
               isMicro
-                ? '../assets/img/Jetrix_Logo.png" alt="logo"'
+                ? '../../assets/img/Jetrix_Logo.png" alt="logo"'
                 : './assets/img/Jetrix_Logo.png" alt="logo"'
             }" />
         </a>
@@ -20,7 +20,7 @@ const generateHeader = (element, isMicro) => {
     <div class="menu-container">
         <ul class="desktop-menu-list">
         <li>
-          <a href="${isMicro ? "../" : "./"}">Home</a>
+          <a href="${isMicro ? "../../" : "./"}">Home</a>
         </li>
         <li href="#aplications">Aplicaciones</li>
         <li href="#contacto">Contacto</li>
@@ -31,7 +31,7 @@ const generateHeader = (element, isMicro) => {
         <div class="burguermenu">
         <ul>
             <li>
-              <a href="${isMicro ? "../" : "./"}">Home</a>
+              <a href="${isMicro ? "../../" : "./"}">Home</a>
             </li>
             <li href="#aplications">Aplicaciones</li>
             <li href="#contacto">Contacto</li>

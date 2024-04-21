@@ -342,9 +342,6 @@ nav .menu-container .burguermenu li {
     margin-bottom: 20px;
   }
 
-  .aplications-section .aplications-container .tags-group {
-  }
-
   .aplications-section .aplications-container-mobile .apliactions-filtered {
     display: grid;
     grid-template-columns: repeat(auto-fit, 150px);

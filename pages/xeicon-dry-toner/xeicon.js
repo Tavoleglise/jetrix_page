@@ -1,7 +1,7 @@
-import generateHeader from "../components/header.js";
-import generateFooter from "../components/footer.js";
-import { generateAplications } from "../micrositio.js";
-import { px3000Aplications } from "../utils/utils.js";
+import generateHeader from "../../components/header.js";
+import generateFooter from "../../components/footer.js";
+import { generateAplications } from "../../micrositio.js";
+import { dryTonerAplications } from "../../utils/utils.js";
 
 const buttonOpenPdf = document.querySelector("#butonPDF");
 
@@ -20,4 +20,4 @@ buttonOpenPdf.addEventListener("click", () => {
 
 //-------------------------------------------------------------------------------------
 
-generateAplications(px3000Aplications);
+generateAplications(dryTonerAplications);

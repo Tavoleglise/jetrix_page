@@ -5,19 +5,19 @@ export const px3000Aplications = [
     aplications: [
       {
         name: "Autoadherible",
-        url_image: "../assets/img/pages/px3000/Etiquetas-autoadherible.png",
+        url_image: "../../assets/img/pages/px3000/Etiquetas-autoadherible.png",
       },
       {
         name: "IML",
-        url_image: "../assets/img/pages/px3000/Etiquetas-IML.png",
+        url_image: "../../assets/img/pages/px3000/Etiquetas-IML.png",
       },
       {
         name: "Heat transfer",
-        url_image: "../assets/img/pages/px3000/Etiquetas-heat_transfer.png",
+        url_image: "../../assets/img/pages/px3000/Etiquetas-heat_transfer.png",
       },
       {
         name: "Wrap around",
-        url_image: "../assets/img/pages/px3000/Etiquetas-wrap_arround.png",
+        url_image: "../../assets/img/pages/px3000/Etiquetas-wrap_arround.png",
       },
     ],
   },
@@ -30,7 +30,7 @@ export const dryTonerAplications = [
     aplications: [
       {
         name: "Autoadherible",
-        url_image: "../assets/img/pages/dry-toner/Pouches.png",
+        url_image: "../../assets/img/pages/dry-toner/Pouches.png",
       },
     ],
   },
@@ -40,20 +40,20 @@ export const dryTonerAplications = [
     aplications: [
       {
         name: "Banners",
-        url_image: "../assets/img/pages/dry-toner/Especialidades-banner.png",
+        url_image: "../../assets/img/pages/dry-toner/Especialidades-banner.png",
       },
       {
         name: "Wallpapres",
-        url_image: "../assets/img/pages/dry-toner/Especialidades-wallpaper.png",
+        url_image: "../../assets/img/pages/dry-toner/Especialidades-wallpaper.png",
       },
       {
         name: "Security <br> printing",
         url_image:
-          "../assets/img/pages/dry-toner/Especialidades-security-printing.png",
+          "../../assets/img/pages/dry-toner/Especialidades-security-printing.png",
       },
       {
         name: "heat transfer",
-        url_image: "../assets/img/pages/dry-toner/Etiquetas-heat-transfer.png",
+        url_image: "../../assets/img/pages/dry-toner/Etiquetas-heat-transfer.png",
       },
     ],
   },
@@ -63,7 +63,7 @@ export const dryTonerAplications = [
     aplications: [
       {
         name: "Etiquetas IML",
-        url_image: "../assets/img/pages/dry-toner/Etiquetas-IML.png",
+        url_image: "../../assets/img/pages/dry-toner/Etiquetas-IML.png",
       },
     ],
   },
@@ -76,15 +76,15 @@ export const weiganseriesJZR = [
     aplications: [
       {
         name: "Aluminio",
-        url_image: "../assets/img/pages/weigan/Empaque-flexible/Aluminio.jpg",
+        url_image: "../../assets/img/pages/weigan/Empaque-flexible/Aluminio.jpg",
       },
       {
         name: "pbl",
-        url_image: "../assets/img/pages/weigan/Empaque-flexible/PBL.jpg",
+        url_image: "../../assets/img/pages/weigan/Empaque-flexible/PBL.jpg",
       },
       {
         name: "Pouches",
-        url_image: "../assets/img/pages/weigan/Empaque-flexible/Pouches.png",
+        url_image: "../../assets/img/pages/weigan/Empaque-flexible/Pouches.png",
       },
     ],
   },
@@ -94,17 +94,17 @@ export const weiganseriesJZR = [
     aplications: [
       {
         name: "Etiquetas IML",
-        url_image: "../assets/img/pages/weigan/Etiquetas/Etiquetas-IML.png",
+        url_image: "../../assets/img/pages/weigan/Etiquetas/Etiquetas-IML.png",
       },
       {
         name: "Etiquetas Termoencogibles",
         url_image:
-          "../assets/img/pages/weigan/Etiquetas/Etiquetas-termoencogibles.png",
+          "../../assets/img/pages/weigan/Etiquetas/Etiquetas-termoencogibles.png",
       },
       {
         name: "Etiquetas Wrap Arround",
         url_image:
-          "../assets/img/pages/weigan/Etiquetas/Etiquetas-wrap-arround.png",
+          "../../assets/img/pages/weigan/Etiquetas/Etiquetas-wrap-arround.png",
       },
     ],
   },
@@ -116,15 +116,15 @@ export const rebornApplications = [
     aplications: [
       {
         name: "embozado",
-        url_image: "../assets/img/pages/reborn/embozado.jpg",
+        url_image: "../../assets/img/pages/reborn/embozado.jpg",
       },
       {
         name: "hot stamping",
-        url_image: "../assets/img/pages/reborn/hot-stamping.jpg",
+        url_image: "../../assets/img/pages/reborn/hot-stamping.jpg",
       },
       {
         name: "serigrafia",
-        url_image: "../assets/img/pages/reborn/serigrafia.jpg",
+        url_image: "../../assets/img/pages/reborn/serigrafia.jpg",
       },
     ],
   },

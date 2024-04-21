@@ -10,7 +10,7 @@ const generateFooter = (element, isMicro) => {
         </div>
         <div class="centerItem footerCenter">
             <img src="${
-              isMicro ? "../assets/img/logo.png" : "./assets/img/logo.png"
+              isMicro ? "../../assets/img/logo.png" : "./assets/img/logo.png"
             }" class="logo" />
         </div>
         <div id="avisoDePrivacidadButton" class="centerItem grid footerButton">

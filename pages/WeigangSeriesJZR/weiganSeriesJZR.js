@@ -1,7 +1,7 @@
-import generateHeader from "../components/header.js";
-import generateFooter from "../components/footer.js";
-import { generateAplications } from "../micrositio.js";
-import { weiganseriesJZR } from "../utils/utils.js";
+import generateHeader from "../../components/header.js";
+import generateFooter from "../../components/footer.js";
+import { generateAplications } from "../../micrositio.js";
+import { weiganseriesJZR } from "../../utils/utils.js";
 
 const buttonOpenPdf = document.querySelector("#butonPDF");
 

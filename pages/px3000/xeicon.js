@@ -1,7 +1,7 @@
-import generateHeader from "../components/header.js";
-import generateFooter from "../components/footer.js";
-import { generateAplications } from "../micrositio.js";
-import { rebornApplications } from "../utils/utils.js";
+import generateHeader from "../../components/header.js";
+import generateFooter from "../../components/footer.js";
+import { generateAplications } from "../../micrositio.js";
+import { px3000Aplications } from "../../utils/utils.js";
 
 const buttonOpenPdf = document.querySelector("#butonPDF");
 
@@ -13,11 +13,11 @@ generateFooter(footer, true);
 //-------------------------------------------------------------------------------------
 buttonOpenPdf.addEventListener("click", () => {
   window.open(
-    "../assets/pdf/reborn/Reborn-ficha tecnica.pdf",
+    "../assets/pdf/dry-toner/Equipos digitales_Xeikon_FichaTecnica.pdf",
     "_blank"
   );
 });
 
 //-------------------------------------------------------------------------------------
 
-generateAplications(rebornApplications);
+generateAplications(px3000Aplications);
