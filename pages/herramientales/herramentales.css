@@ -1,0 +1,60 @@
+.herramentales-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.herramentales-section .info-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 8em;
+}
+
+.herramentales-section .info-container .brand-label {
+  /* Estilos para brand-label */
+}
+
+.herramentales-section .info-container .title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.herramentales-section .info-container .bullet-container {
+  margin-top: 1.5em;
+}
+
+.herramentales-section .info-container .bullet-container .title-bullets {
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+.herramentales-section .info-container .bullet-container .bullet {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.herramentales-section
+  .info-container
+  .bullet-container
+  .bullet
+  .bullet-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  margin-right: 15px;
+}
+
+.herramentales-section .img-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.herramentales-section .img-container img {
+  max-width: 25em;
+}

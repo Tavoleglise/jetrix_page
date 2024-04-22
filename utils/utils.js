@@ -44,7 +44,8 @@ export const dryTonerAplications = [
       },
       {
         name: "Wallpapres",
-        url_image: "../../assets/img/pages/dry-toner/Especialidades-wallpaper.png",
+        url_image:
+          "../../assets/img/pages/dry-toner/Especialidades-wallpaper.png",
       },
       {
         name: "Security <br> printing",
@@ -53,7 +54,8 @@ export const dryTonerAplications = [
       },
       {
         name: "heat transfer",
-        url_image: "../../assets/img/pages/dry-toner/Etiquetas-heat-transfer.png",
+        url_image:
+          "../../assets/img/pages/dry-toner/Etiquetas-heat-transfer.png",
       },
     ],
   },
@@ -76,7 +78,8 @@ export const weiganseriesJZR = [
     aplications: [
       {
         name: "Aluminio",
-        url_image: "../../assets/img/pages/weigan/Empaque-flexible/Aluminio.jpg",
+        url_image:
+          "../../assets/img/pages/weigan/Empaque-flexible/Aluminio.jpg",
       },
       {
         name: "pbl",
@@ -127,6 +130,86 @@ export const rebornApplications = [
         url_image: "../../assets/img/pages/reborn/serigrafia.jpg",
       },
     ],
+  },
+];
+
+export const herramentalesSections = [
+  {
+    id: 0,
+    infoSide: "left",
+    brandName: "Anilox - CTS",
+    title: "Calidad Premium",
+    bulletsGroups: [
+      {
+        bulletsGroupTitle: null,
+        bullets: [
+          "Únicos en el mercado con 2 años de garantía",
+          "Mejor tecnología de engraving en el mundo",
+          "Soluciones a la medida para las aplicaciones más difíciles",
+        ],
+      },
+    ],
+    pdf: "../../assets/pdf/Anilox-CTS.pdf",
+  },
+  {
+    id: 1,
+    infoSide: "rigth",
+    brandName: "Cilindros Impresores - Rotometal",
+    title: "Cilindros de gama alta",
+    bulletsGroups: [
+      {
+        bulletsGroupTitle: "Cilindros de impresión",
+        bullets: [
+          "Resistencia a la corrosión",
+          "Aumenta la resistencia al daño mecánico",
+          "Mayor dureza y alta resistencia",
+        ],
+      },
+      {
+        bulletsGroupTitle: "Cilindros magnéticos",
+        bullets: [
+          "Resistencia a la abrasión",
+          "Posibilidad de endurecimiento",
+          "Mayor dureza",
+        ],
+      },
+    ],
+    pdf: "../../assets/pdf/Anilox-CTS.pdf",
+  },
+  {
+    id: 2,
+    infoSide: "left",
+    brandName: "Lavadora de Anilox - Sonic Solutions",
+    title: "Mayor resultado a menor tiempo",
+    bulletsGroups: [
+      {
+        bulletsGroupTitle: null,
+        bullets: [
+          "Método de limpieza ecológico con Eco Clean",
+          "Sencillez de uso",
+          "Soluciones desde 7” hasta 30”",
+        ],
+      },
+    ],
+    pdf: "../../assets/pdf/Anilox-CTS.pdf",
+  },
+  {
+    id: 3,
+    infoSide: "rigth",
+    brandName: "CSL 4000-D - Swiftcolor",
+    title: "Impresora Inkjet para etiquetas",
+    bulletsGroups: [
+      {
+        bulletsGroupTitle: null,
+        bullets: [
+          "Hasta 10cm de ancho",
+          "Velocidad de 220mm x segundo",
+          "1200x1200 dpi de resolución",
+          "Imprime: Etiquetas de envíos, tags de equipaje, etiquetas de vinos y más",
+        ],
+      },
+    ],
+    pdf: "../../assets/pdf/Anilox-CTS.pdf",
   },
 ];
 
