@@ -13,7 +13,7 @@ generateFooter(footer, true);
 //-------------------------------------------------------------------------------------
 buttonOpenPdf.addEventListener("click", () => {
   window.open(
-    "../assets/pdf/dry-toner/Equipos digitales_Xeikon_FichaTecnica.pdf",
+    "../../assets/pdf/dry-toner/Equipos digitales_Xeikon_FichaTecnica.pdf",
     "_blank"
   );
 });

@@ -1,46 +1,46 @@
 const generateHeader = (element, isMicro) => {
   const mainHeader = `
     <nav>
-    <div class="burguermenu-icon">
+      <div class="logo-container">
+          <a href="${isMicro ? "../../" : "./"}">
+              <img src="${
+                isMicro
+                  ? '../../assets/img/Jetrix_Logo.png" alt="logo"'
+                  : './assets/img/Jetrix_Logo.png" alt="logo"'
+              }" />
+          </a>
+      </div>
+      <div class="burguermenu-icon">
         <img src="${
           isMicro
             ? "../../assets/img//icons/menu.png"
             : "./assets/img//icons/menu.png"
         }" alt="" />
-    </div>
-    <div class="logo-container">
-        <a href="${isMicro ? "../../" : "./"}">
-            <img src="${
-              isMicro
-                ? '../../assets/img/Jetrix_Logo.png" alt="logo"'
-                : './assets/img/Jetrix_Logo.png" alt="logo"'
-            }" />
-        </a>
-    </div>
-    <div class="menu-container">
-        <ul class="desktop-menu-list">
-        <li>
-          <a href="${isMicro ? "../../" : "./"}">Home</a>
-        </li>
-        <li href="#aplications">Aplicaciones</li>
-        <li href="#contacto">Contacto</li>
-        <li>
-            <a href="https://jetrix-team.exmoffice.com/cliente/">Soporte</a>
-        </li>
-        </ul>
-        <div class="burguermenu">
-        <ul>
-            <li>
-              <a href="${isMicro ? "../../" : "./"}">Home</a>
-            </li>
-            <li href="#aplications">Aplicaciones</li>
-            <li href="#contacto">Contacto</li>
-            <li>
-            <a href="https://jetrix-team.exmoffice.com/cliente/">Soporte</a>
-            </li>
-        </ul>
-        </div>
-    </div>
+      </div>
+      <div class="menu-container">
+          <ul class="desktop-menu-list">
+          <li>
+            <a href="${isMicro ? "../../" : "./"}">Home</a>
+          </li>
+          <li href="#aplications">Aplicaciones</li>
+          <li href="#contacto">Contacto</li>
+          <li>
+              <a href="https://jetrix-team.exmoffice.com/cliente/">Soporte</a>
+          </li>
+          </ul>
+          <div class="burguermenu">
+          <ul>
+              <li>
+                <a href="${isMicro ? "../../" : "./"}">Home</a>
+              </li>
+              <li href="#aplications">Aplicaciones</li>
+              <li href="#contacto">Contacto</li>
+              <li>
+              <a href="https://jetrix-team.exmoffice.com/cliente/">Soporte</a>
+              </li>
+          </ul>
+          </div>
+      </div>
     </nav>
     `;
   if (element) {

@@ -150,7 +150,7 @@ export const herramentalesSections = [
       },
     ],
     img: "../../assets/img/pages/herramentales/CTS_Circulo.png",
-    pdf: "../../assets/pdf/Anilox-CTS.pdf",
+    pdf: "../../assets/pdf/px3000/Spec-sheet-Panther-series_metric.pdf",
   },
   {
     id: 1,
@@ -176,7 +176,7 @@ export const herramentalesSections = [
       },
     ],
     img: "../../assets/img/pages/herramentales/Rotometal_Circulo.png",
-    pdf: "../../assets/pdf/Anilox-CTS.pdf",
+    pdf: "../../assets/pdf/px3000/Spec-sheet-Panther-series_metric.pdf",
   },
   {
     id: 2,
@@ -194,7 +194,7 @@ export const herramentalesSections = [
       },
     ],
     img: "../../assets/img/pages/herramentales/SonicSolutions_Circulo.png",
-    pdf: "../../assets/pdf/Anilox-CTS.pdf",
+    pdf: "../../assets/pdf/px3000/Spec-sheet-Panther-series_metric.pdf",
   },
   {
     id: 3,
@@ -213,7 +213,7 @@ export const herramentalesSections = [
       },
     ],
     img: "../../assets/img/pages/herramentales/swift.png",
-    pdf: "../../assets/pdf/Anilox-CTS.pdf",
+    pdf: "../../assets/pdf/px3000/Spec-sheet-Panther-series_metric.pdf",
   },
 ];
 

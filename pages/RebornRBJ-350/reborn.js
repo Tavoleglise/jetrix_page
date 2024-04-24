@@ -13,7 +13,7 @@ generateFooter(footer, true);
 //-------------------------------------------------------------------------------------
 buttonOpenPdf.addEventListener("click", () => {
   window.open(
-    "../assets/pdf/reborn/Reborn-ficha tecnica.pdf",
+    "../../assets/pdf/reborn/Reborn-ficha tecnica.pdf",
     "_blank"
   );
 });

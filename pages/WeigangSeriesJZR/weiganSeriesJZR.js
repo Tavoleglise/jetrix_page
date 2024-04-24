@@ -13,7 +13,7 @@ generateFooter(footer, true);
 //-------------------------------------------------------------------------------------
 buttonOpenPdf.addEventListener("click", () => {
   window.open(
-    "../assets/pdf/weiganseriesJZR/Weigang-ZJR_FichaTecnica.pdf",
+    "../../assets/pdf/weiganseriesJZR/Weigang-ZJR_FichaTecnica.pdf",
     "_blank"
   );
 });

@@ -7,6 +7,7 @@ export class Herramientales {
     this.htmlToInject = this._generateHtml(sectionsInfo);
     this._injectHtml();
     this._scrollToSection();
+    this._scrollToContact();
   }
 
   _generateHtml(herramentalesSections) {
@@ -71,6 +72,14 @@ export class Herramientales {
                         : ""
                     }
                   </section>
+                  <div class="bContainer">
+                    <button class="button1 bold button_to_contact" id="button_to_contact">
+                      Contacta a un asesor
+                    </button>
+                    <button id="butonPDF" class="button2 bold">
+                      <a href="${section.pdf}">Ficha Técnica</a>
+                    </button>
+                  </div>
                   `;
     });
     return tempHtml;
@@ -89,5 +98,14 @@ export class Herramientales {
       const $section = document.getElementById(sectionId);
       $section.scrollIntoView({ behavior: "smooth" });
     }
+  }
+  _scrollToContact() {
+    const $buttonsToContact = document.querySelectorAll(".button_to_contact");
+    $buttonsToContact.forEach(($button) => {
+      $button.addEventListener("click", () => {
+        const $contactSection = document.getElementById("contacto");
+        $contactSection.scrollIntoView({ behavior: "smooth" });
+      });
+    });
   }
 }

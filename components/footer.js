@@ -32,8 +32,8 @@ const generateFooter = (element, isMicro) => {
     "#terminosYCondicionesButton"
   );
 
-  addPdfEvent(buttonPrivacyNoticePdf, `${isMicro ? ".." : "."}${PDF_URL}`);
-  addPdfEvent(buttonTermsAndConditions, `${isMicro ? ".." : "."}${PDF_URL}`);
+  addPdfEvent(buttonPrivacyNoticePdf, `${isMicro ? "../.." : "."}${PDF_URL}`);
+  addPdfEvent(buttonTermsAndConditions, `${isMicro ? "../.." : "."}${PDF_URL}`);
 };
 
 export default generateFooter;
