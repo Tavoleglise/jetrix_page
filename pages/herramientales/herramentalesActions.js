@@ -13,44 +13,58 @@ export class Herramientales {
     let tempHtml = "";
     herramentalesSections.forEach((section) => {
       tempHtml += `
-                  <section id="${section.id}" class="herramentales-section">
+                  <section id="${section.id}" class="herramentales-section ${
+        section.infoSide === "left" ? "reverse-column" : "grey-background"
+      }">
                       ${
                         section.infoSide === "rigth"
-                          ? `<div class="img-container">
+                          ? `<div class="img-container  ${
+                              section.infoSide === "rigth"
+                                ? "img-left"
+                                : "img-rigth"
+                            }">
                       <img
-                        src="../../assets/img/pages/herramentales/CTS_Circulo.png"
+                        src="${section.img}"
                         alt=""
                       />
                     </div>`
                           : ""
                       }
-                    <div class="info-container">
-                      <div class="brand-label">${section.brandName}</div>
-                      <div class="title">${section.title}</div>
-                      ${section.bulletsGroups
-                        .map(
-                          (bulletGroup) => `<div class="bullet-container">
-                        ${
-                          bulletGroup.bulletsGroupTitle
-                            ? `<div class="title-bullets">${bulletGroup.bulletsGroupTitle}</div>`
-                            : ""
-                        }
-                        ${bulletGroup.bullets
+                    <div class="info-container ${
+                      section.infoSide === "rigth" ? "info-rigth" : "info-left"
+                    }">
+                      <div class="info-box">
+                        <div class="brand-label">${section.brandName}</div>
+                        <div class="title">${section.title}</div>
+                        ${section.bulletsGroups
                           .map(
-                            (bullet) => `<div class="bullet">
-                          <div class="bullet-circle"></div>
-                          ${bullet}</div>`
+                            (bulletGroup) => `<div class="bullet-container">
+                          ${
+                            bulletGroup.bulletsGroupTitle
+                              ? `<div class="title-bullets">${bulletGroup.bulletsGroupTitle}</div>`
+                              : ""
+                          }
+                          ${bulletGroup.bullets
+                            .map(
+                              (bullet) => `<div class="bullet">
+                            <div class="bullet-circle"></div>
+                            ${bullet}</div>`
+                            )
+                            .join("")}
+                        </div>`
                           )
                           .join("")}
-                      </div>`
-                        )
-                        .join("")}
+                      </div>   
                     </div>
                     ${
                       section.infoSide === "left"
-                        ? `<div class="img-container">
+                        ? `<div class="img-container ${
+                            section.infoSide === "rigth"
+                              ? "img-left"
+                              : "img-rigth"
+                          }">
                     <img
-                      src="../../assets/img/pages/herramentales/CTS_Circulo.png"
+                      src="${section.img}"
                       alt=""
                     />
                   </div>`

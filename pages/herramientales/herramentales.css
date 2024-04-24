@@ -1,8 +1,13 @@
+.sections-container .grey-background {
+  background-color: #f5f5f5;
+}
+
 .herramentales-section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  overflow-x: hidden;
 }
 
 .herramentales-section .info-container {
@@ -11,6 +16,14 @@
   flex-direction: column;
   width: 50%;
   padding: 0 8em;
+}
+
+.herramentales-section .info-left {
+  align-items: flex-end;
+}
+
+.herramentales-section .info-rigth {
+  align-items: flex-start;
 }
 
 .herramentales-section .info-container .brand-label {
@@ -52,9 +65,49 @@
 .herramentales-section .img-container {
   width: 50%;
   display: flex;
-  justify-content: center;
+  padding: 0 8em;
+}
+
+.herramentales-section .img-left {
+  justify-content: flex-end;
+}
+
+.herramentales-section .img-rigth {
+  justify-content: flex-start;
 }
 
 .herramentales-section .img-container img {
   max-width: 25em;
+}
+
+@media (width <= 768px) {
+  .sections-container .reverse-column {
+    flex-direction: column-reverse;
+  }
+  .herramentales-section {
+    flex-direction: column;
+    margin-bottom: 4em;
+  }
+
+  .herramentales-section .info-left,
+  .herramentales-section .info-rigth {
+    align-items: center;
+  }
+
+  .herramentales-section .info-container,
+  .herramentales-section .img-container {
+    width: 100%;
+    padding: 0 2em;
+  }
+
+  .herramentales-section .img-container img {
+    max-width: 10em;
+  }
+  .herramentales-section .img-left {
+    justify-content: center;
+  }
+
+  .herramentales-section .img-rigth {
+    justify-content: center;
+  }
 }

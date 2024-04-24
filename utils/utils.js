@@ -149,6 +149,7 @@ export const herramentalesSections = [
         ],
       },
     ],
+    img: "../../assets/img/pages/herramentales/CTS_Circulo.png",
     pdf: "../../assets/pdf/Anilox-CTS.pdf",
   },
   {
@@ -174,6 +175,7 @@ export const herramentalesSections = [
         ],
       },
     ],
+    img: "../../assets/img/pages/herramentales/Rotometal_Circulo.png",
     pdf: "../../assets/pdf/Anilox-CTS.pdf",
   },
   {
@@ -191,6 +193,7 @@ export const herramentalesSections = [
         ],
       },
     ],
+    img: "../../assets/img/pages/herramentales/SonicSolutions_Circulo.png",
     pdf: "../../assets/pdf/Anilox-CTS.pdf",
   },
   {
@@ -209,6 +212,7 @@ export const herramentalesSections = [
         ],
       },
     ],
+    img: "../../assets/img/pages/herramentales/swift.png",
     pdf: "../../assets/pdf/Anilox-CTS.pdf",
   },
 ];
