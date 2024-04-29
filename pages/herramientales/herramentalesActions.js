@@ -13,10 +13,8 @@ export class Herramientales {
   _generateHtml(herramentalesSections) {
     let tempHtml = "";
     herramentalesSections.forEach((section) => {
-      tempHtml += `
-                  <section id="${section.id}" class="herramentales-section ${
-        section.infoSide === "left" ? "reverse-column" : "grey-background"
-      }">
+      tempHtml += `<div class="section-wrapper ${section.infoSide === "rigth" ? "grey-background" : ""}">
+                    <section id="${section.id}" class="herramentales-section ${section.infoSide === "left" ? "reverse-column" : ""}">
                       ${
                         section.infoSide === "rigth"
                           ? `<div class="img-container  ${
@@ -80,6 +78,7 @@ export class Herramientales {
                       <a href="${section.pdf}">Ficha Técnica</a>
                     </button>
                   </div>
+                </div>
                   `;
     });
     return tempHtml;
