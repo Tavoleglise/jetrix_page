@@ -6,19 +6,59 @@
       "aplications": [
         {
           "name": "Autoadherible",
-          "url_image": "./assets/img/aplications_types/Etiquetas-autoadherible.png"
+          "url_image": "./assets/img/aplications_types/Etiquetas-autoadherible.png",
+          "options": [
+            {
+              "name": "Flexografía",
+              "url": "/pages/WeigangSeriesJZR/WeigangSeriesJZR.html"
+            },
+            {
+              "name": "Digital Toner",
+              "url": "/pages/xeicon-dry-toner/dry-toner.html"
+            },
+            {
+              "name": "Digital Inkjet",
+              "url": "/pages/px3000/px3000.html"
+            }
+          ]
         },
         {
           "name": "IML",
-          "url_image": "./assets/img/aplications_types/Etiquetas-IML.png"
+          "url_image": "./assets/img/aplications_types/Etiquetas-IML.png",
+          "options": [
+            {
+              "name": "Flexografía",
+              "url": "/pages/WeigangSeriesJZR/WeigangSeriesJZR.html"
+            },
+            {
+              "name": "Digital Toner",
+              "url": "/pages/xeicon-dry-toner/dry-toner.html"
+            }
+          ]
         },
         {
           "name": "Heat Transfer",
-          "url_image": "./assets/img/aplications_types/Etiquetas-heat_transfer.png"
+          "url_image": "./assets/img/aplications_types/Etiquetas-heat_transfer.png",
+          "options": [
+            {
+              "name": "Flexografía",
+              "url": "/pages/WeigangSeriesJZR/WeigangSeriesJZR.html"
+            },
+            {
+              "name": "Digital Toner",
+              "url": "/pages/xeicon-dry-toner/dry-toner.html"
+            }
+          ]
         },
         {
-          "name": "Termoencogible",
-          "url_image": "./assets/img/aplications_types/Etiquetas-termoencogibles.png"
+          "name": "Aluminio",
+          "url_image": "./assets/img/aplications_types/Etiquetas-termoencogibles.png",
+          "options": [
+            {
+              "name": "Flexografía",
+              "url": "/pages/WeigangSeriesJZR/WeigangSeriesJZR.html"
+            }
+          ]
         }
       ]
     },
@@ -28,19 +68,47 @@
       "aplications": [
         {
           "name": "Security <br> printing",
-          "url_image": "./assets/img/aplications_types/Especialidades-security_printing.png"
+          "url_image": "./assets/img/aplications_types/Especialidades-security_printing.png",
+          "options": [
+            {
+              "name": "Flexografía",
+              "url": "/pages/WeigangSeriesJZR/WeigangSeriesJZR.html"
+            },
+            {
+              "name": "Digital Toner",
+              "url": "/pages/xeicon-dry-toner/dry-toner.html"
+            }
+          ]
         },
         {
           "name": "Libros",
-          "url_image": "./assets/img/aplications_types/Especialidades-libros.png"
+          "url_image": "./assets/img/aplications_types/Especialidades-libros.png",
+          "options": [
+            {
+              "name": "Digital Toner",
+              "url": "/pages/xeicon-dry-toner/dry-toner.html"
+            }
+          ]
         },
         {
           "name": "Banners",
-          "url_image": "./assets/img/aplications_types/Especialidades-banner.png"
+          "url_image": "./assets/img/aplications_types/Especialidades-banner.png",
+          "options": [
+            {
+              "name": "Digital Toner",
+              "url": "/pages/xeicon-dry-toner/dry-toner.html"
+            }
+          ]
         },
         {
           "name": "Wallpapres",
-          "url_image": "./assets/img/aplications_types/Especialidades-wallpaper.png"
+          "url_image": "./assets/img/aplications_types/Especialidades-wallpaper.png",
+          "options": [
+            {
+              "name": "Digital Toner",
+              "url": "/pages/xeicon-dry-toner/dry-toner.html"
+            }
+          ]
         }
       ]
     },
@@ -50,7 +118,37 @@
       "aplications": [
         {
           "name": "Pouches",
-          "url_image": "./assets/img/aplications_types/Pouches.png"
+          "url_image": "./assets/img/aplications_types/Pouches.png",
+          "options": [
+            {
+              "name": "Flexografía",
+              "url": "/pages/WeigangSeriesJZR/WeigangSeriesJZR.html"
+            },
+            {
+              "name": "Digital Toner",
+              "url": "/pages/xeicon-dry-toner/dry-toner.html"
+            }
+          ]
+        },
+        {
+          "name": "Termoencogilble",
+          "url_image": "./assets/img/aplications_types/empaque-flexible/Etiquetas-termoencogibles.png",
+          "options": [
+            {
+              "name": "Flexografía",
+              "url": "/pages/WeigangSeriesJZR/WeigangSeriesJZR.html"
+            }
+          ]
+        },
+        {
+          "name": "PVL",
+          "url_image": "./assets/img/aplications_types/empaque-flexible/PBL.jpg",
+          "options": [
+            {
+              "name": "Flexografía",
+              "url": "/pages/WeigangSeriesJZR/WeigangSeriesJZR.html"
+            }
+          ]
         }
       ]
     },
@@ -59,27 +157,102 @@
       "id": 3,
       "aplications": [
         {
-          "name": "Anilox",
-          "url_image": "./assets/img/aplications_types/Accesorios-anilox.png"
+          "name": "ANILOX/CTS",
+          "url_image": "./assets/img/aplications_types/Accesorios-anilox.png",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/herramientales/herramentales.html?sectionId=0"
+            }
+          ]
         },
         {
-          "name": "Porta plancha",
-          "url_image": "./assets/img/aplications_types/Accesorios-portaplancha.png"
+          "name": "CILINDROS DE IMPRESION / ROTOMETAL",
+          "url_image": "./assets/img/aplications_types/Accesorios-portaplancha.png",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/herramientales/herramentales.html?sectionId=1"
+            }
+          ]
         },
         {
-          "name": "Cilindro Magnético",
-          "url_image": "./assets/img/aplications_types/Accesorios-cilindros_magneticos.png"
+          "name": "LAVADORA DE ANILOX / SONIC SOLUTIONS",
+          "url_image": "./assets/img/aplications_types/Accesorios-cilindros_magneticos.png",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/herramientales/herramentales.html?sectionId=2"
+            }
+          ]
         },
         {
-          "name": "Lavadora",
-          "url_image": "./assets/img/aplications_types/Accesorios-lavadora.png"
+          "name": "CSL 4000-D / Swiftcolor",
+          "url_image": "./assets/img/aplications_types/accesorios-flexo/Accesorios-SwiftColor.jpg",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/herramientales/herramentales.html?sectionId=3"
+            }
+          ]
         }
       ]
     },
     {
       "type": "Acabados Especiales",
       "id": 4,
-      "aplications": []
+      "aplications": [
+        {
+          "name": "EMBELLISMENT DIGITAL",
+          "url_image": "./assets/img/aplications_types/acabados-especiales/embellisment.jpg",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/RebornRBJ-350/rebornRBJ-350.html"
+            }
+          ]
+        },
+        {
+          "name": "EMBOSADO",
+          "url_image": "./assets/img/aplications_types/acabados-especiales/embozado.jpg",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/RebornRBJ-350/rebornRBJ-350.html"
+            }
+          ]
+        },
+        {
+          "name": "HOT STAMPING",
+          "url_image": "./assets/img/aplications_types/acabados-especiales/hot-stamping.jpg",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/RebornRBJ-350/rebornRBJ-350.html"
+            }
+          ]
+        },
+        {
+          "name": "SERIGRAFIA",
+          "url_image": "./assets/img/aplications_types/acabados-especiales/serigrafia.jpg",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/RebornRBJ-350/rebornRBJ-350.html"
+            }
+          ]
+        },
+        {
+          "name": "TROQUEL LASER",
+          "url_image": "./assets/img/aplications_types/acabados-especiales/Troquelado.jpg",
+          "options": [
+            {
+              "name": "",
+              "url": "/pages/RebornRBJ-350/rebornRBJ-350.html"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

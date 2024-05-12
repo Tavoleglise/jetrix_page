@@ -1,6 +1,6 @@
 import generateHeader from "./components/header.js";
 import generateFooter from "./components/footer.js";
-import generateHead from "./components/head.js";
+import insertModal from "./components/modal/modal.js";
 
 const container = document.querySelector(".slider-container");
 const sections = gsap.utils.toArray(
@@ -62,7 +62,7 @@ buttonNext.addEventListener("click", (event) => {
   animateSlides(activeSection);
 });
 
-//-------------------------------------------------------------------------------------
+// desktop aplications-------------------------------------------------------------------------------------
 let aplication_html = "";
 let tags_html = "";
 
@@ -98,17 +98,22 @@ const getAplications = async (id = 0) => {
   const types = await fetchData();
   const aplicationsSpecificType = types.aplications_type[id];
 
-  if (id === types.aplications_type.length - 1) {
+  /* if (id === types.aplications_type.length - 1) {
     aplication_html =
       '<div class="button button-acabadosEspeciales">Contáctanos</div>';
-  }
+  } */
 
   aplicationsSpecificType.aplications.forEach((aplication) => {
     aplication_html += `
     <div class="aplication-card">
-      <img src="${
-        aplication.url_image
-      }" alt="" />${aplication.name.toUpperCase()}
+      <div class="aplication-menu">
+        ${aplication.options?.map((option) => {
+          return `<a class="option" href="${option.url}"><div>${option.name}</div></a>`;
+        })}
+      </div>
+      <img src="${aplication.url_image}" alt="" />
+      <div class="aplication-name">${aplication.name.toUpperCase()}</div>
+      
     </div>
     `;
   });
@@ -118,46 +123,71 @@ const getAplications = async (id = 0) => {
   const aplication_cards = gsap.utils.toArray(".aplication-card");
 
   aplication_cards.forEach((card) => {
-    card.addEventListener("click", () => {
-      gsap.to(window, {
-        duration: 1,
-        scrollTo: "#contacto",
-      });
+    gsap.from(card, {
+      autoAlpha: 0,
+      y: 50,
+      duration: 1,
+      ease: "spring",
     });
   });
 
-  const button_acabados = document.querySelector(".button-acabadosEspeciales");
+  const aplication_menus = gsap.utils.toArray(".aplication-menu");
+
+  aplication_menus.forEach((menu) => {
+    gsap.set(menu, {
+      autoAlpha: 0,
+    }); // Hace que el menú sea invisible
+  });
+
+  aplication_cards.forEach((card, index) => {
+    const menu = aplication_menus[index];
+
+    card.addEventListener("mouseenter", () => {
+      gsap.to(menu, {
+        autoAlpha: 1, // Hace que el menú sea visible
+        duration: 1, // Duración de la animación en segundos
+        ease: "power1.out", // Tipo de easing para la animación
+      });
+      console.log("aparece, ", menu);
+    });
+
+    card.addEventListener("mouseleave", () => {
+      gsap.to(menu, {
+        autoAlpha: 0, // Hace que el menú sea invisible
+        duration: 1, // Duración de la animación en segundos
+        ease: "power1.in", // Tipo de easing para la animación
+      });
+      console.log("desaparece", menu);
+    });
+  });
+
+  /* const button_acabados = document.querySelector(".button-acabadosEspeciales");
   button_acabados?.addEventListener("click", () => {
     gsap.to(window, {
       duration: 1,
       scrollTo: "#contacto",
     });
-  });
+  });*/
 };
-
+// mobile aplications-------------------------------------------------------------------------------------
 const getMobileAplicationCards = async () => {
   let mobileAplicationCard_html = "";
   const types = await fetchData();
   const typesArr = types.aplications_type;
 
   typesArr.forEach((type) => {
-    let mobileAplicationCardImages_html = "";
     mobileAplicationCard_html += `
     <div class="card">
       <div class="tag">${type.type}
       </div>
       <div class="apliactions-filtered"> 
-      ${
-        type.id === 4
-          ? "<div class='mobile-aplication-button-container'><div class='button'>Contactános</div></div>"
-          : type.aplications
-              .map((aplicationImage) => {
-                return `<div class="aplication-card"><img src=${
-                  aplicationImage.url_image
-                } alt="" />${aplicationImage.name.toUpperCase()}</div>`;
-              })
-              .join("")
-      }</div>
+      ${type.aplications
+        .map((aplicationImage) => {
+          return `<div class="aplication-card aplication-card-mobile"><img src=${
+            aplicationImage.url_image
+          } alt="" />${aplicationImage.name.toUpperCase()}</div>`;
+        })
+        .join("")}</div>
     </div>`;
   });
   aplications_container.innerHTML = mobileAplicationCard_html;
@@ -198,16 +228,50 @@ const getMobileAplicationCards = async () => {
     animateAplications(aplicationsActiveSection);
   });
 
-  const aplication_cards = gsap.utils.toArray(".aplication-card");
+  const aplication_cards = gsap.utils.toArray(".aplication-card-mobile");
 
   aplication_cards.forEach((card) => {
     card.addEventListener("click", () => {
-      gsap.to(window, {
-        duration: 1,
-        scrollTo: "#contacto",
-      });
+      buildMobileModal(card);
     });
   });
+
+  const buildMobileModalHtml = async (typeIndex, aplicationIndex) => {
+    const aplicationData = await fetchData();
+    const options =
+      aplicationData.aplications_type[typeIndex].aplications[aplicationIndex]
+        .options;
+    let modalContentHtml = "";
+    modalContentHtml += `
+    <div class="modal-content-container">
+      ${options
+        ?.map((option) => {
+          return `<a href="${option.url}"><div class="option-button">${
+            option.name || "Ir a máquina"
+          }</div></a>`;
+        })
+        .join("")}
+    </div>
+    `;
+
+    return modalContentHtml;
+  };
+
+  const buildMobileModal = async (card) => {
+    const parentElement = card.parentNode.parentNode;
+    const parentOfParent = parentElement.parentNode;
+    const parentOfParentChildrenList = Array.from(parentOfParent.children);
+    const parentIndex = parentOfParentChildrenList.indexOf(parentElement);
+    const aplicationCardindex = Array.from(card.parentNode.children).indexOf(
+      card
+    );
+    const aplicationName = card.innerText;
+    insertModal(
+      aplicationName,
+      await buildMobileModalHtml(parentIndex, aplicationCardindex)
+    );
+  };
+
   const button_acabados = document.querySelector(
     ".mobile-aplication-button-container .button"
   );
