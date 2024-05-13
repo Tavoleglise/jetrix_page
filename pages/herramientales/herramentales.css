@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   overflow-x: hidden;
 }
 
@@ -15,7 +15,7 @@
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  padding: 0 8em;
+  padding: 0 1.5em;
 }
 
 .herramentales-section .info-left {
@@ -65,7 +65,7 @@
 .herramentales-section .img-container {
   width: 50%;
   display: flex;
-  padding: 0 8em;
+  padding: 0 1.5em;
 }
 
 .herramentales-section .img-left {
@@ -109,5 +109,13 @@
 
   .herramentales-section .img-rigth {
     justify-content: center;
+  }
+}
+@media (width >= 1800px) {
+  .herramentales-section .info-container {
+    padding: 0 8em;
+  }
+  .herramentales-section .img-container {
+    padding: 0 10em;
   }
 }
