@@ -144,18 +144,18 @@ const getAplications = async (id = 0) => {
 
     card.addEventListener("mouseenter", () => {
       gsap.to(menu, {
-        autoAlpha: 1, // Hace que el menú sea visible
-        duration: 1, // Duración de la animación en segundos
-        ease: "power1.out", // Tipo de easing para la animación
+        autoAlpha: 1,
+        duration: 0.5,
+        ease: "power1.out",
       });
       console.log("aparece, ", menu);
     });
 
     card.addEventListener("mouseleave", () => {
       gsap.to(menu, {
-        autoAlpha: 0, // Hace que el menú sea invisible
-        duration: 1, // Duración de la animación en segundos
-        ease: "power1.in", // Tipo de easing para la animación
+        autoAlpha: 0,
+        duration: 0.5,
+        ease: "power1.in",
       });
       console.log("desaparece", menu);
     });

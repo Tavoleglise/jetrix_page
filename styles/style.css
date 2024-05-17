@@ -47,6 +47,10 @@ nav {
   justify-content: center;
   align-items: center;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 nav div {
   width: 50%;

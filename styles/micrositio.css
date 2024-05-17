@@ -1,6 +1,9 @@
 /*----- Header navbar -----*/
 nav {
   background: linear-gradient(90deg, #0e2133 0%, #2f4b6b 100%);
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +30,6 @@ nav .logo-container img {
 nav .menu-container {
   display: flex;
   justify-content: flex-end;
-  padding-right: 100px;
 }
 
 nav .menu-container ul li {

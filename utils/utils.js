@@ -29,7 +29,7 @@ export const dryTonerAplications = [
     id: 0,
     aplications: [
       {
-        name: "Autoadherible",
+        name: "Pouches",
         url_image: "../../assets/img/pages/dry-toner/Pouches.png",
       },
     ],
@@ -50,7 +50,7 @@ export const dryTonerAplications = [
       {
         name: "Security <br> printing",
         url_image:
-          "../../assets/img/pages/dry-toner/Especialidades-security-printing.png",
+          "../../assets/img/aplications_types/Especialidades-security_printing.png",
       },
       {
         name: "heat transfer",
