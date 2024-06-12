@@ -442,6 +442,34 @@ nav .menu-container .burguermenu li {
     grid-template-columns: repeat(auto-fit, 250px);
   }
 }
+/*----- Redes Sociales -----*/
+.rrssContainer {
+  position: fixed;
+  transform: translate(0, -50%);
+  border-radius: 5px;
+  top: 70%;
+  right: 0;
+  background: #555f6b;
+  color: #fff;
+  padding: 10px 0;
+  width: 50px;
+}
+
+.closeButton {
+  background: rgba(85, 95, 107, 0);
+  z-index: 1000;
+  padding: 0;
+}
+
+.social-network {
+  cursor: pointer;
+}
+
+.social-network:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+/*----- Fin Redes Sociales -----*/
 
 @media (max-width: 776px) {
   h1 {

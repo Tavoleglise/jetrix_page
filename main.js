@@ -1,6 +1,7 @@
 import generateHeader from "./components/header.js";
 import generateFooter from "./components/footer.js";
 import insertModal from "./components/modal/modal.js";
+import generateSocialNetworks from "./components/socialNetworks.js";
 
 const container = document.querySelector(".slider-container");
 const sections = gsap.utils.toArray(
@@ -26,6 +27,7 @@ const header = document.querySelector("header");
 const footer = document.querySelector(".footer");
 generateHeader(header, false);
 generateFooter(footer, false);
+generateSocialNetworks()
 // generateHead();
 //-------------------------------------------------------------------------------------
 
