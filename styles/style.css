@@ -451,10 +451,14 @@ nav .menu-container .burguermenu li {
   right: 0;
   background: #555f6b;
   color: #fff;
-  padding: 10px 0;
+  padding: 10px 6px;
   width: 50px;
 }
 
+#Layer_2 {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
 .closeButton {
   background: rgba(85, 95, 107, 0);
   z-index: 1000;
