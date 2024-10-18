@@ -7,7 +7,9 @@ const container = document.querySelector(".slider-container");
 const sections = gsap.utils.toArray(
   ".slider .slider-container .card-container"
 );
-const slider_buttons = gsap.utils.toArray(".slider .slider-container .button");
+const slider_buttons = gsap.utils.toArray(
+  ".slider .slider-container .button-to-scroll"
+);
 const buttonPrev = document.querySelector("#prev-button");
 const buttonNext = document.querySelector("#next-button");
 
@@ -27,7 +29,7 @@ const header = document.querySelector("header");
 const footer = document.querySelector(".footer");
 generateHeader(header, false);
 generateFooter(footer, false);
-generateSocialNetworks()
+generateSocialNetworks();
 // generateHead();
 //-------------------------------------------------------------------------------------
 
@@ -291,7 +293,7 @@ getMobileAplicationCards();
 
 //-------------------------------------------------------------------------------------
 
-const scrollButtons = slider_buttons.slice(4, slider_buttons.length);
+const scrollButtons = slider_buttons;
 
 scrollButtons.forEach((button) => {
   button.addEventListener("click", () => {
