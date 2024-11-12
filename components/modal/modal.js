@@ -1,4 +1,4 @@
-export default function insertModal(title, content) {
+export default function insertModal(title, content, closeOptionalFunction) {
   // Crea el elemento del modal
   const modal = document.createElement("div");
   modal.classList.add("modal");
@@ -29,6 +29,9 @@ export default function insertModal(title, content) {
 
   const closeButton = modal.querySelector(".close-button");
   closeButton.addEventListener("click", () => {
+    if (closeOptionalFunction) {
+      closeOptionalFunction();
+    }
     document.body.removeChild(modal);
   });
 }

@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -163,7 +163,7 @@ nav .menu-container .burguermenu li {
   font-weight: 300;
 }
 .slider-container .card-container .left-container .bullet-intro {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 3rem;
 }
@@ -346,7 +346,11 @@ nav .menu-container .burguermenu li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+
+.modal-container .modal-header .close-button {
+  cursor: pointer;
 }
 
 .modal-container .modal-content .modal-content-container {
@@ -366,6 +370,11 @@ nav .menu-container .burguermenu li {
 .modal-container .modal-content .modal-content-container .option-button:hover {
   background-color: #2f4b6b;
   color: #fff;
+}
+
+.promo-image {
+  max-width: 100%; /* Ajusta el valor según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 
 @media (max-width: 1850px) {
@@ -388,9 +397,12 @@ nav .menu-container .burguermenu li {
   }
   .slider-container .card-container .left-container .title-intro {
     font-size: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   .slider-container .card-container .left-container .bullet-intro {
     font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
   }
 }
 
@@ -626,6 +638,9 @@ nav .menu-container .burguermenu li {
   .aplications-container-mobile #next-button-mobile {
     left: 100%;
     transform: translate(-100%, -50%);
+  }
+  .slider-container .card-container .left-container .bullet-intro {
+    line-height: 1rem;
   }
 }
 

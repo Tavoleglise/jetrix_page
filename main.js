@@ -303,3 +303,22 @@ scrollButtons.forEach((button) => {
     });
   });
 });
+
+//-------------------------------------------------------------------------------------
+// Inicial Modal
+const getFlagFromSesionStorage = () => {
+  return sessionStorage.getItem("promoModalClosed");
+};
+const setFlagInSesionStorage = () => {
+  sessionStorage.setItem("promoModalClosed", true);
+};
+if (!getFlagFromSesionStorage()) {
+  window.addEventListener("load", () => {
+    console.log("Page has fully loaded");
+    insertModal(
+      "",
+      `<img src="./assets/img/promos/buenfin.png" class="promo-image">`,
+      setFlagInSesionStorage
+    );
+  });
+}
