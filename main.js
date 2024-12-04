@@ -312,7 +312,7 @@ const getFlagFromSesionStorage = () => {
 const setFlagInSesionStorage = () => {
   sessionStorage.setItem("promoModalClosed", true);
 };
-if (!getFlagFromSesionStorage()) {
+/* if (!getFlagFromSesionStorage()) {
   window.addEventListener("load", () => {
     console.log("Page has fully loaded");
     insertModal(
@@ -321,4 +321,4 @@ if (!getFlagFromSesionStorage()) {
       setFlagInSesionStorage
     );
   });
-}
+} */

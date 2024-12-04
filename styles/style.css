@@ -464,6 +464,9 @@ nav .menu-container .burguermenu li {
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
   }
+  .modal-container .modal-box {
+    width: 100%;
+  }
 }
 /*----- Redes Sociales -----*/
 .rrssContainer {
