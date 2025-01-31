@@ -142,11 +142,10 @@ nav .menu-container .burguermenu li {
 }
 
 .slider-container .card-container {
-  padding: 0 150px;
+  padding: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100vw;
 }
 
