@@ -312,13 +312,13 @@ const getFlagFromSesionStorage = () => {
 const setFlagInSesionStorage = () => {
   sessionStorage.setItem("promoModalClosed", true);
 };
-/* if (!getFlagFromSesionStorage()) {
+if (!getFlagFromSesionStorage()) {
   window.addEventListener("load", () => {
     console.log("Page has fully loaded");
     insertModal(
       "",
-      `<img src="./assets/img/promos/buenfin.png" class="promo-image">`,
+      `<img src="./assets/img/promos/LE-PopUp.png" class="promo-image">`,
       setFlagInSesionStorage
     );
   });
-} */
+}
