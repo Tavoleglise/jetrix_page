@@ -2,11 +2,11 @@ const btn = document.getElementById('mensaje');
 console.log("entree");
 document.getElementById('form')
  .addEventListener('submit', function(event) {
-  emailjs.init("dloXgIZB4HQ-Mh4it");
+  emailjs.init("ivzt_5SnDX4JuH7Jd");
    event.preventDefault();
 
-   const serviceID = 'service_3boqv39';
-   const templateID = 'template_0coojaa';
+   const serviceID = 'service_yyoexbc';
+   const templateID = 'template_cvv49nb';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
