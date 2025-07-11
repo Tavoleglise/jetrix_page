@@ -317,7 +317,7 @@ if (!getFlagFromSesionStorage()) {
     console.log("Page has fully loaded");
     insertModal(
       "",
-      `<img src="./assets/img/promos/LE-PopUp.png" class="promo-image">`,
+      `<img src="./assets/img/promos/Banner_pag_web.jpg" class="promo-image">`,
       setFlagInSesionStorage
     );
   });

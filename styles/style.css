@@ -121,7 +121,7 @@ nav .menu-container .burguermenu li {
 }
 .slider .slider-container {
   display: flex;
-  width: 600vw;
+  width: 700vw;
 }
 .slider .slider-button {
   position: absolute;
@@ -374,6 +374,11 @@ nav .menu-container .burguermenu li {
 .promo-image {
   max-width: 100%; /* Ajusta el valor según tus necesidades */
   height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.slider_full_image {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 1850px) {
