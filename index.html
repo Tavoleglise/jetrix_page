@@ -342,15 +342,13 @@
       <form
         id="form"
         class="gridForm"
-        action="https://formsubmit.co/marketing@jetrix.com.mx"
-        method="POST"
       >
         <div class="formItem">
           <input
             class="marB25 width50 formItem height50"
             type="text"
-            id="campo1"
-            name="Nombre"
+            id="nombre"
+            name="nombre"
             placeholder="Nombre*"
           />
         </div>
@@ -358,19 +356,19 @@
           <input
             class="width"
             type="text"
-            id="campo2"
-            name="Telefono"
+            id="telefono"
+            name="telefono"
             maxlength="10"
             placeholder="Telefono*"
           />
-          <input type="email" id="campo3" name="Mail" placeholder="Mail*" />
+          <input type="email" id="correo" name="correo" placeholder="Mail*" />
         </div>
         <div class="marB25 paddT10 height100 message">
           <input
             class="width100 formItem"
             type="text"
-            id="campo4"
-            name="Mensaje"
+            id="mensaje"
+            name="mensaje"
             placeholder="Mensaje*"
           />
         </div>
@@ -413,6 +411,8 @@
     <div class="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./components/email.js"></script>
   </body>
 </html>
